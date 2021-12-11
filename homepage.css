@@ -1,0 +1,248 @@
+body {
+    background-color: lightcyan;
+}
+.human-body {
+    width: 207px;
+    position: relative;
+    padding-top: 240px;
+    height: 260px;
+    display: block;
+    margin: 40px auto;
+}
+
+.human-body svg:hover {
+    cursor: pointer;
+}
+
+.human-body svg:hover path {
+    fill: #ff7d16;
+}
+
+.human-body svg {
+    position: absolute;
+    left: 50%;
+    fill: #57c9d5;
+}
+
+.human-body svg#head {
+    margin-left: -28.5px;
+    top: -6px;
+}
+
+.human-body svg#left-shoulder {
+    margin-left: -53.5px;
+    top: 69px;
+}
+
+.human-body svg#right-shoulder {
+    margin-left: 13.5px;
+    top: 69px;
+}
+
+.human-body svg#left-arm {
+    margin-left: -78px;
+    top: 112px;
+}
+
+.human-body svg#right-arm {
+    margin-left: 38px;
+    top: 112px;
+    z-index: 3;
+}
+
+.human-body svg#chest {
+    margin-left: -43.5px;
+    top: 88px;
+}
+
+.human-body svg#stomach {
+    margin-left: -37.5px;
+    top: 130px;
+}
+
+.human-body svg#left-leg {
+    margin-left: -46.5px;
+    top: 205px;
+    z-index: 1;
+}
+
+.human-body svg#right-leg {
+    margin-left: 1.5px;
+    top: 205px;
+    z-index: 1;
+}
+
+.human-body svg#left-hand {
+    margin-left: -102.5px;
+    top: 224px;
+}
+
+.human-body svg#right-hand {
+    margin-left: 66.5px;
+    top: 224px;
+    z-index: 2;
+}
+
+.human-body svg#left-foot {
+    margin-left: -35.5px;
+    top: 455px;
+}
+
+.human-body svg#right-foot {
+    margin-left: 5.5px;
+    top: 455px;
+}
+
+#area {
+    display: block;
+    width: 100%;
+    clear: both;
+    padding: 10px;
+    text-align: center;
+    font-size: 25px;
+    font-family: Courier New;
+    color: #a5a5a5;
+    margin-top: 300px;
+}
+
+#area #data {
+    color: black;
+}
+
+#checkboxes{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar {
+    width: 100%;
+    height: 110px;
+    background-color: #171717;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 1rem;
+    z-index: 50;
+}
+.navbar img {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+
+.navbarLogo>h2 {
+    color: #fff;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.hamburgerMenu {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+.hamburgerMenu > div {
+    width: 100%;
+    height: 3px;
+    background: #f4f4f4;
+}
+.hamburgerMenu:hover > div {
+    background: #dd219e;
+}
+
+.sidebar {
+    width: 30%;
+    background: #f4f4f4;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 200;
+    transform: translateX(-100%);
+    transition: all 0.3s ease-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.sidebar.show {
+    transform: translateX(0);
+}
+.sidebarLinks {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+}
+.sidebarLinks > li {
+    /* color:white; */
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+}
+.sidebarLinks > li > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex: 1;
+    padding: 1rem;
+    text-decoration: none;
+    color: #171717;
+    font-size: 1.6rem;
+}
+.sidebarLinks > li > a:hover {
+    background: blue;
+    color: white;
+}
+
+footer {
+    margin-top: 10px;
+    padding:40px 0;
+    background-color:blue;
+    color:#f4f4f4;
+}
+footer .social {
+    text-align:center;
+    padding-bottom:25px;
+}
+  
+footer .social > a {
+    font-size:43px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    /* border:1px solid #ccc; */
+    color: #fff;
+    margin:0 8px;
+    color:inherit;
+    opacity:0.75;
+}
+  
+footer .social > a:hover {
+    opacity:0.9;
+}
+  
+footer .copyright {
+    margin-top:15px;
+    text-align:center;
+    font-size:18px;
+    color:#f4f4f4;
+    margin-bottom:0;
+}
+  
