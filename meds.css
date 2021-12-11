@@ -1,0 +1,96 @@
+*,
+*::after,
+*::before {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-image: linear-gradient(90deg, lightcyan, lightblue);
+	background-repeat: no-repeat;
+	font-family: Source Sans Pro, Tahoma, sans-serif;
+}
+
+h3 {
+	font-family: Source Sans Pro, Verdana, sans-serif;
+	color: darkslategray;
+	font-size: larger;
+}
+
+h4 {
+	font-family: Source Sans Pro, Verdana, sans-serif;
+	color: slategray;
+	font-size: medium;
+}
+
+p {
+	font-size: 90%;
+}
+
+.meds {
+	padding-inline: 10rem;
+}
+
+.med {
+	display: flex;
+	box-shadow: 0 0.25rem 0.5rem gray;
+	margin: 2rem;
+	padding: 2rem;
+	border-radius: 2rem;
+	background-color: lightcyan;
+	cursor: pointer;
+}
+
+.active {
+	background-color: lightgreen;
+}
+
+.harmful {
+	background-color: lightcoral;
+	pointer-events: none;
+}
+
+.med > img {
+	height: 128px;
+	border-radius: 1rem;
+}
+
+.med-info {
+	padding-inline: 2rem;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.med-info-details {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.stars {
+	color: yellow;
+	align-items: center;
+	height: 100%;
+	font-size: x-large;
+}
+
+.summary {
+	display: flex;
+	padding: 2rem 0 5rem 15rem;
+	width: 100%;
+	gap: 2rem;
+	align-items: center;
+}
+
+button {
+	border: 0;
+	background: lightblue;
+	padding-inline: 1rem;
+	padding-block: 0.5rem;
+	border-radius: 1rem;
+	cursor: pointer;
+	box-shadow: 0.125rem 0.125rem 0.25rem gray;
+}
