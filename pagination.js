@@ -46,18 +46,18 @@ function createPagination(totalPages, page){
     }else{ //else leave empty to the active variable
       active = "";
     }
-    liTag += `<li class="numb ${active}" onclick="createPagination(totalPages, ${plength})"><span><a href="meds.html">${plength}</a></span></li>`;
+    liTag += `<li class="numb ${active}" onclick="createPagination(totalPages, ${plength})"><span><a href="meds2.html">${plength}</a></span></li>`;
   }
 
   if(page < totalPages - 1){ //if page value is less than totalPage value by -1 then show the last li or page
     if(page < totalPages - 2){ //if page value is less than totalPage value by -2 then add this (...) before the last li or page
       liTag += `<li class="dots"><span>...</span></li>`;
     }
-    liTag += `<li class="last numb" onclick="createPagination(totalPages, ${totalPages})"><span><a href="meds.html">${totalPages}</a></span></li>`;
+    liTag += `<li class="last numb" onclick="createPagination(totalPages, ${totalPages})"><span><a href="meds2.html">${totalPages}</a></span></li>`;
   }
 
   if (page < totalPages) { //show the next button if the page value is less than totalPage(20)
-    liTag += `<li class="btn next" onclick="createPagination(totalPages, ${page + 1})"><span><a href="meds.html">Next </a><i class="fas fa-angle-right"></i></span></li>`;
+    liTag += `<li class="btn next" onclick="createPagination(totalPages, ${page + 1})"><span><a href="meds2.html">Next </a><i class="fas fa-angle-right"></i></span></li>`;
   }
   element.innerHTML = liTag; //add li tag inside ul tag
   return liTag; //reurn the li tag
