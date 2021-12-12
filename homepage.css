@@ -114,11 +114,17 @@
 
 input[type="checkbox"] {
 	cursor: pointer;
-	border: 0;
+	background-color: lightcyan;
+	border-color: darkslategray;
+}
+
+.form-check:hover > input[type="checkbox"] {
+	border-color: orange;
 }
 
 input[type="checkbox"]:checked {
 	background-color: orange;
+	border: none;
 }
 
 .button {
@@ -204,17 +210,7 @@ input[type="checkbox"]:checked {
 }
 
 .button {
-	margin: 2rem;
-}
-
-.button > button {
-	background-color: orange;
-	border: 0;
-}
-
-.button > button:hover {
-	background-color: orange;
-	color: inherit;
+	margin-bottom: 2rem;
 }
 
 footer {
@@ -235,7 +231,7 @@ footer {
 }
 
 .social > a:hover {
-	color: white;
+	color: lightcyan;
 }
 
 .copyright {

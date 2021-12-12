@@ -11,6 +11,7 @@ body {
 	background-repeat: no-repeat;
 	font-family: Source Sans Pro, Tahoma, sans-serif;
 	color: darkslategray;
+	min-height: 100vh;
 }
 
 h3 {
@@ -31,10 +32,16 @@ p {
 
 button {
 	border: 0;
-	background: lightblue;
+	background: orange;
+	color: lightcyan;
 	padding-inline: 1rem;
 	padding-block: 0.5rem;
 	border-radius: 1rem;
 	cursor: pointer;
+	margin: 1rem;
 	box-shadow: 0.125rem 0.125rem 0.25rem gray;
+}
+
+button:hover {
+	box-shadow: none;
 }

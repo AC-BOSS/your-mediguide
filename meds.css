@@ -53,4 +53,11 @@
 	width: 100%;
 	gap: 2rem;
 	align-items: center;
+	justify-content: flex-end;
+	padding-right: 10rem;
+}
+
+.summary > span {
+	display: flex;
+	gap: 1rem;
 }
