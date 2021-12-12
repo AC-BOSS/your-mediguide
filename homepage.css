@@ -1,248 +1,243 @@
-body {
-    background-color: lightcyan;
-}
 .human-body {
-    width: 207px;
-    position: relative;
-    padding-top: 240px;
-    height: 260px;
-    display: block;
-    margin: 40px auto;
+	width: 100%;
+	position: relative;
+	padding-top: 240px;
+	height: 260px;
+	margin-top: 6rem;
 }
 
 .human-body svg:hover {
-    cursor: pointer;
+	cursor: pointer;
 }
 
 .human-body svg:hover path {
-    fill: #ff7d16;
+	fill: orange;
 }
 
 .human-body svg {
-    position: absolute;
-    left: 50%;
-    fill: #57c9d5;
+	position: absolute;
+	left: 75%;
+	fill: #57c9d5;
 }
 
 .human-body svg#head {
-    margin-left: -28.5px;
-    top: -6px;
+	margin-left: -28.5px;
+	top: -6px;
 }
 
 .human-body svg#left-shoulder {
-    margin-left: -53.5px;
-    top: 69px;
+	margin-left: -53.5px;
+	top: 69px;
 }
 
 .human-body svg#right-shoulder {
-    margin-left: 13.5px;
-    top: 69px;
+	margin-left: 13.5px;
+	top: 69px;
 }
 
 .human-body svg#left-arm {
-    margin-left: -78px;
-    top: 112px;
+	margin-left: -78px;
+	top: 112px;
 }
 
 .human-body svg#right-arm {
-    margin-left: 38px;
-    top: 112px;
-    z-index: 3;
+	margin-left: 38px;
+	top: 112px;
+	z-index: 3;
 }
 
 .human-body svg#chest {
-    margin-left: -43.5px;
-    top: 88px;
+	margin-left: -43.5px;
+	top: 88px;
 }
 
 .human-body svg#stomach {
-    margin-left: -37.5px;
-    top: 130px;
+	margin-left: -37.5px;
+	top: 130px;
 }
 
 .human-body svg#left-leg {
-    margin-left: -46.5px;
-    top: 205px;
-    z-index: 1;
+	margin-left: -46.5px;
+	top: 205px;
+	z-index: 1;
 }
 
 .human-body svg#right-leg {
-    margin-left: 1.5px;
-    top: 205px;
-    z-index: 1;
+	margin-left: 1.5px;
+	top: 205px;
+	z-index: 1;
 }
 
 .human-body svg#left-hand {
-    margin-left: -102.5px;
-    top: 224px;
+	margin-left: -102.5px;
+	top: 224px;
 }
 
 .human-body svg#right-hand {
-    margin-left: 66.5px;
-    top: 224px;
-    z-index: 2;
+	margin-left: 66.5px;
+	top: 224px;
+	z-index: 2;
 }
 
 .human-body svg#left-foot {
-    margin-left: -35.5px;
-    top: 455px;
+	margin-left: -35.5px;
+	top: 455px;
 }
 
 .human-body svg#right-foot {
-    margin-left: 5.5px;
-    top: 455px;
+	margin-left: 5.5px;
+	top: 455px;
 }
 
 #area {
-    display: block;
-    width: 100%;
-    clear: both;
-    padding: 10px;
-    text-align: center;
-    font-size: 25px;
-    font-family: Courier New;
-    color: #a5a5a5;
-    margin-top: 300px;
+	text-align: end;
+	font-size: large;
+	margin-top: 250px;
+	padding: 2rem;
 }
 
-#area #data {
-    color: black;
+#data {
+	color: black;
+	padding-inline: 1rem;
 }
 
-#checkboxes{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    font-size: 25px;
+#checkboxes {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 2rem;
 }
 
-.button{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.form-check > label {
+	cursor: pointer;
+}
+
+input[type="checkbox"] {
+	cursor: pointer;
+	border: 0;
+}
+
+input[type="checkbox"]:checked {
+	background-color: orange;
+}
+
+.button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .navbar {
-    width: 100%;
-    height: 110px;
-    background-color: #171717;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.5rem 1rem;
-    z-index: 50;
-}
-.navbar img {
-    height: 80px;
-    width: 80px;
-    border-radius: 50%;
+	z-index: 50;
+	position: fixed;
+	top: 0;
+	left: 0;
+	padding: 1rem;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
 }
 
-.navbarLogo>h2 {
-    color: #fff;
-    font-size: 1.4rem;
-    cursor: pointer;
+.navbarLogo {
+	height: 64px;
+	border-radius: 1rem;
 }
 
 .hamburgerMenu {
-    display: flex;
-    width: 30px;
-    height: 30px;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    cursor: pointer;
+	display: flex;
+	width: 20px;
+	height: 20px;
+	flex-direction: column;
+	justify-content: space-between;
+	cursor: pointer;
+	margin-left: 1rem;
 }
+
 .hamburgerMenu > div {
-    width: 100%;
-    height: 3px;
-    background: #f4f4f4;
+	height: 2px;
+	background: darkslategray;
 }
+
 .hamburgerMenu:hover > div {
-    background: #dd219e;
+	background: orange;
 }
 
 .sidebar {
-    width: 30%;
-    background: #f4f4f4;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 200;
-    transform: translateX(-100%);
-    transition: all 0.3s ease-out;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+	width: 20%;
+	background: lightblue;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 25;
+	transform: translateX(-100%);
+	transition: all 0.3s ease-out;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 .sidebar.show {
-    transform: translateX(0);
+	transform: translateX(0);
 }
 .sidebarLinks {
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    padding: 0;
+	display: flex;
+	flex-direction: column;
+	list-style: none;
 }
 .sidebarLinks > li {
-    /* color:white; */
-    /* background-color: blue; */
-    display: flex;
-    align-items: center;
+	display: flex;
+	align-items: center;
 }
 .sidebarLinks > li > a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    flex: 1;
-    padding: 1rem;
-    text-decoration: none;
-    color: #171717;
-    font-size: 1.6rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	flex: 1;
+	padding: 1rem;
+	text-decoration: none;
+	color: darkslategray;
+	font-size: large;
 }
 .sidebarLinks > li > a:hover {
-    background: blue;
-    color: white;
+	background-color: lightcyan;
+}
+
+.button {
+	margin: 2rem;
+}
+
+.button > button {
+	background-color: orange;
+	border: 0;
+}
+
+.button > button:hover {
+	background-color: orange;
+	color: inherit;
 }
 
 footer {
-    margin-top: 10px;
-    padding:40px 0;
-    background-color:blue;
-    color:#f4f4f4;
+	background: darkslategray;
+	color: lightblue;
+	padding: 2rem;
 }
-footer .social {
-    text-align:center;
-    padding-bottom:25px;
+
+.social {
+	display: flex;
+	justify-content: center;
+	gap: 1rem;
 }
-  
-footer .social > a {
-    font-size:43px;
-    width:40px;
-    height:40px;
-    line-height:40px;
-    display:inline-block;
-    text-align:center;
-    border-radius:50%;
-    /* border:1px solid #ccc; */
-    color: #fff;
-    margin:0 8px;
-    color:inherit;
-    opacity:0.75;
+
+.social > a {
+	font-size: xx-large;
+	color: lightblue;
 }
-  
-footer .social > a:hover {
-    opacity:0.9;
+
+.social > a:hover {
+	color: white;
 }
-  
-footer .copyright {
-    margin-top:15px;
-    text-align:center;
-    font-size:18px;
-    color:#f4f4f4;
-    margin-bottom:0;
+
+.copyright {
+	text-align: center;
 }
-  
