@@ -20,9 +20,9 @@ Try it out : https://ac-boss.github.io/your-mediguide/
 
 ### Review Medicine Page
 
-![clone images](/Screenshots/review.png)
+![clone images](/Screenshots/rating.png)
 
 ### Blogs and Doctors Page
 
-![clone images](/Screenshots/blog.png)
+![clone images](/Screenshots/blogs.png)
 ![clone images](/Screenshots/doctors.png)
