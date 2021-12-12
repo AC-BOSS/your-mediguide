@@ -33,6 +33,10 @@
 	gap: 1rem;
 }
 
+.med-info > a {
+	width: fit-content;
+}
+
 .med-info-details {
 	display: flex;
 	align-items: center;
@@ -54,6 +58,16 @@
 	gap: 2rem;
 	align-items: center;
 	justify-content: flex-end;
+	padding-right: 10rem;
+}
+
+.summary1 {
+	display: flex;
+	padding: 2rem 0 5rem 15rem;
+	width: 100%;
+	gap: 2rem;
+	align-items: center;
+	justify-content: flex-start;
 	padding-right: 10rem;
 }
 
