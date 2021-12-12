@@ -1,0 +1,47 @@
+*,
+*::after,
+*::before {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-image: linear-gradient(90deg, lightcyan, lightblue);
+	background-repeat: no-repeat;
+	font-family: Source Sans Pro, Tahoma, sans-serif;
+	color: darkslategray;
+	min-height: 100vh;
+}
+
+h3 {
+	font-family: Source Sans Pro, Verdana, sans-serif;
+	color: darkslategray;
+	font-size: larger;
+}
+
+h4 {
+	font-family: Source Sans Pro, Verdana, sans-serif;
+	color: slategray;
+	font-size: medium;
+}
+
+p {
+	font-size: 90%;
+}
+
+button {
+	border: 0;
+	background: orange;
+	color: lightcyan;
+	padding-inline: 1rem;
+	padding-block: 0.5rem;
+	border-radius: 1rem;
+	cursor: pointer;
+	margin: 1rem;
+	box-shadow: 0.125rem 0.125rem 0.25rem gray;
+}
+
+button:hover {
+	box-shadow: none;
+}
