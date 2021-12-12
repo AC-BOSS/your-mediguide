@@ -20,7 +20,7 @@ Try it out : https://ac-boss.github.io/your-mediguide/
 
 ### Review Medicine Page
 
-![clone images](/Screenshots/rating.png)
+![clone images](/Screenshots/rate.png)
 
 ### Blogs and Doctors Page
 
